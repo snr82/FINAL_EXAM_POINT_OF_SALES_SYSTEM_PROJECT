@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Ordering Layout</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--        -->
+    <!-- NAVBAR -->
+    <!--        -->
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Menu</a></li>
+            <li><a href="#home">Home</a></li>
+        </ul>
+    </nav>
+
+        <div class="intro">
+            <h1>
+                <a>
+                    Sushi House
+                </a>
+            </h1>
+            <p> 
+                Welcome to Sushi House
+            </p>
+        </div>
+
+    <!--      -->
+    <!-- MENU -->
+    <!--      -->
+
+  <div class="container">
+    <div class="menu-section">
+      <h2 class="menu-title">Menu</h2>
+
+<input type="text" id="searchBar" placeholder="Search menu..." onkeyup="searchMenu()"/>
+      <div class="menu-grid">
+        <div class="card">
+          <img src="sashimi.jpg" alt="">
+          <div class="card-body">
+            <div class="food-name">Sashimi</div>
+            <div class="price">210 PHP</div>
+            <input type="number" id="sashimiQty">
+            <button onclick="addToOrder('Sashimi', 210, 'sashimiQty')">
+              Add to order
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="inari.jpg" alt="">
+          <div class="card-body">
+            <div class="food-name">Inari</div>
+            <div class="price">180 PHP</div>
+            <input type="number" id="inariQty">
+            <button onclick="addToOrder('Inari', 180, 'inariQty')">
+              Add to order
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="calliforniarolls.jpg" alt="">
+          <div class="card-body">
+            <div class="food-name">Callifornia Rolls</div>
+            <div class="price">125 PHP</div>
+            <input type="number" id="calliforniarollsQty">
+            <button onclick="addToOrder('Callifornia Rolls', 125, 'calliforniarollsQty')">
+              Add to order
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="nigiri.jpg" alt="">
+          <div class="card-body">
+            <div class="food-name">Nigiri</div>
+            <div class="price">210 PHP</div>
+            <input type="number" id="nigiriQty">
+            <button onclick="addToOrder('Nigiri', 210, 'nigiriQty')">
+              Add to order
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--               -->
+    <!-- ORDER SECTION -->
+    <!--               -->
+
+    <div class="order-section">
+      <h2 class="order-title">Ordered Items</h2>
+      <div id="orderList">
+      </div>
+      <div class="total" id="total">
+        Total: 0 PHP
+      </div>
+      <input type="number" id="payment">
+      <button class="pay-btn" onclick="payNow()">
+        Pay!
+      </button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

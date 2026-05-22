@@ -1,0 +1,180 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  margin: 0px;
+  background:#ffffff;
+  padding: 20px;
+}
+
+/*Navbar Start*/
+
+ul {
+  list-style-type: none;
+  margin: -20px 0 0 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  background-color: #ffffff;
+}
+
+ul li {
+  float: right;
+}
+
+ul li a {
+  display: block;
+  color: rgb(19, 19, 19);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color:#ffeee4;
+}
+
+/*Navbar End*/
+
+.intro {
+    margin: 0 0 100px 0;
+    padding: 180px;
+    text-align: center;
+    background-color: #ffeee4;
+}
+
+.intro a {
+    text-decoration: none;
+    color: #000;
+}
+
+.intro a:hover {
+    color: #fa9e79;
+}
+
+.intro p {
+    margin: 10px 0 0 0;
+    font-size: smaller;
+}
+
+.container{
+  display:flex;
+  gap:20px;
+}
+
+.menu-section{
+  flex:3;
+  background:#ffeee4;
+  border:0;
+  border-radius:5px;
+  padding:15px;
+}
+
+.menu-title{
+  font-size:24px;
+  margin-bottom:15px;
+}
+
+.menu-grid{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.card{
+  width:180px;
+  border:1px solid #f5f7fd;
+  border-radius:0px;
+  overflow:hidden;
+  background:#ffffff;
+  padding-bottom:15px;
+}
+
+.card img{
+  width:100%;
+  height:130px;
+  object-fit:cover;
+}
+
+.card-body{
+  padding:10px;
+}
+
+.food-name{
+  font-size:18px;
+  margin-bottom:5px;
+}
+
+.price{
+  font-size:16px;
+  margin-bottom:10px;
+}
+
+input{
+  width:100%;
+  padding:8px;
+  margin-bottom:10px;
+  border:1px solid #ccc;
+  border-radius:4px;
+}
+
+button{
+  background:#81604d;
+  color:white;
+  border:none;
+  padding:10px;
+  width:100%;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#776f6a;
+}
+
+.order-section{
+  flex:1;
+  background:white;
+  border:1px solid #ccc;
+  border-radius:5px;
+  padding:15px;
+  height:fit-content;
+}
+
+.order-title{
+  font-size:24px;
+  margin-bottom:15px;
+}
+
+.order-item{
+  border:1px solid #ddd;
+  border-radius:5px;
+  padding:15px;
+  margin-bottom:15px;
+  position:relative;
+}
+
+.qty{
+  position:absolute;
+  right:15px;
+  bottom:10px;
+  color:#000000;
+}
+
+.total{
+  font-size:22px;
+  margin-top:20px;
+  margin-bottom:10px;
+}
+
+.pay-btn{
+  background:green;
+}
+
+.pay-btn:hover{
+  background:darkgreen;
+}
